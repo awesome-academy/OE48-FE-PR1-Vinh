@@ -1,0 +1,120 @@
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    @include transition;
+    color: $color-text-black;
+    text-decoration: none;
+
+    &:hover {
+        color: $color-primary !important;
+    }
+}
+
+.font-price {
+    font-family: $font-third;
+}
+
+.font-secondary {
+    font-family: $font-secondary;
+}
+
+.background-primary {
+    background-color: $color-primary;
+}
+
+.background-primary {
+    background-color: $color-primary;
+}
+
+.bg-dark {
+    background-color: $color-black !important;
+}
+
+.border-radius-none {
+    border-radius: 0 !important;
+}
+
+.white-space-nowrap {
+    white-space: nowrap;
+}
+
+.text-primary {
+    color: $color-primary !important;
+}
+
+.float-right {
+    float: right;
+}
+.text-primary{
+    color: $color-primary !important;
+}
+.text-gray {
+    color: $color-gray !important;
+}
+
+.btn-black-white {
+    background-color: $color-black;
+    color: $color-white;
+    &:hover {
+        color: $color-white;
+    }
+}
+
+.div-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-input-require {
+    position: relative;
+    padding-right: 1rem;
+}
+
+.form-input-require::before {
+    position: absolute;
+    content: "*";
+    top: 0;
+    right: 0;
+    color: red;
+}
+
+.text-price {
+    position: relative;
+    padding-right: 1rem;
+}
+
+.text-price::before {
+    position: absolute;
+    content: "đ";
+    margin-left: 0.5rem;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"] {
+    height: 40px;
+    border: solid 1px $color-gray;
+    outline: none;
+    padding: 0 15px;
+    background-color: $color-white;
+}
+
+.active {
+    color: $color-primary !important;
+}
+
+.container {
+    max-width: 1400px;
+}
